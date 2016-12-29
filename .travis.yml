@@ -1,4 +1,4 @@
 language: java
 jdk:
   - openjdk7
-script: mv -Dmaven.test.skip=true
+script: mvn -Dmaven.test.skip=true
