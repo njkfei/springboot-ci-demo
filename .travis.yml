@@ -1,7 +1,7 @@
 language: java
 jdk:
   - openjdk7
-script: mvn -Dmaven.test.skip=true
+script: mvn install -Dmaven.test.skip=true
 after_script:
 - mvn jgitflow:release-start -DpushReleases=true -DallowSnapshots=true
 - mvn jgitflow:release-finish -DnoReleaseBuild=true -DnoDeploy=true -DpushReleases=true
